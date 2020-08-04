@@ -1,0 +1,210 @@
+@font-face {
+	font-family: PT Serif;
+	src: url('./PTSerif-Bold.ttf');
+}
+@font-face {
+	font-family: Roboto;
+	src: url('./Roboto-Light.ttf');
+	font-weight: 100;
+}
+.header {
+	font-family: PT Serif;
+}
+.menu__item {
+	font-family: Roboto;
+	font-weight: 900;
+}
+.main__text {
+	font-family: PT Serif;
+}
+.second__text {
+	font-family: Roboto;
+}
+.button {
+	font-family: Roboto;
+}
+#menu__toggle {
+	opacity: 0;  /* скрывает чекбокс делая его прозрачным */
+}
+#menu__toggle:checked ~ .menu__btn > span {
+	transform: rotate(45deg);
+	background-color: blue;
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+	top: 0;
+	transform: rotate(0);
+	background-color: blue;
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+	top: 0;
+	transform: rotate(90deg);
+	background-color: blue;
+}
+#menu__toggle:checked ~ .menu__box {
+	visibility: visible;
+	right: 0;
+}
+.hamburger__menu {
+	position: absolute;
+	min-width: 500px;
+}
+.menu__btn {  /* стиль кнопки */
+	display: flex;
+	align-items: center;  /* расположение содержимого по центру */
+	position: absolute;
+	top: 20px;  /* расстояние сверху */
+	right: 20px;  /* расстояние слева */
+	width: 30px;  /* размер кнопки */
+	height: 30px;
+	cursor: pointer;  /* отображение курсора */
+	z-index: 1;
+}
+.menu__box {
+	display: flex;
+	position: relative;
+	margin: 0px 0px 0px 600px;
+	list-style: none;
+}
+.menu__item {  /* элементы в меню */
+	display: flex;
+	padding: 12px 24px;
+	color: black;
+	font-size: 14px;
+	text-decoration: none;
+	transition-duration: .25s;
+}
+.menu__item:hover {
+	text-decoration: underline;
+	text-decoration-color: blue;
+}
+.circle_lightskyblue {
+	width: 28px;
+	height: 28px;
+	border-radius: 50%;
+	background: #C8DBFB;
+	z-index: 1;
+	opacity: 0.5;
+	position: absolute;
+	top: 47px;
+	left: 54px;
+}
+.circle_blue {
+	width: 28px;
+	height: 28px;
+	border-radius: 50%;
+	background: #0056EC;
+	position: absolute;
+	top: 40px;
+	left: 46px; 
+}
+.header {
+	position: absolute;
+	top: 40px;
+	left: 90px;
+	font-size: 24px;
+}
+.main__text {
+	font-size:50px;
+	line-height: 66px;
+	display: flex;
+	width: 434px;
+	height: 195px;
+	top: 212px;
+	left: 46px;
+	position: absolute;
+}
+.second__text {
+	position: relative;
+	width: 330px;
+	height: 43px;
+	top: 447px;
+	left: 46px;
+	font-size: 18px;
+	font-weight: bold;
+}
+.button {
+	display: block;
+	position: relative;
+	font-size: 14px;
+	text-decoration: none;
+	color: white;
+	background: blue;
+	text-align: center;
+	line-height: 45px;
+	border-radius: 4px;
+	width: 209px;
+	height: 44px;
+	top: 531px;
+	left: 46px;
+}
+.pic {
+	background-image: url(./frame.svg);
+	background-repeat: no-repeat;
+	background-position: 100% 0;
+	background-size: 50% auto;
+	position: absolute;
+	width: 770px;
+	height: 657px;
+	left: 333px;
+	top: 242px;
+}
+@media (max-width: 375px) {
+	.menu__box {  /* контейнер меню */
+		display: block;
+		position: relative;
+		visibility: hidden;  /* меню по умолчанию скрыто */
+		top: 0;
+		left: 100%;
+		height: 100%;
+		padding: 80px 0;  /* поля сверху, снизу и слева, справа */
+		list-style: none;
+		background-color: white;  /* фон меню */
+		transition-duration: .25s;
+	}
+	.menu__btn > span,  /* "гамбургер" */
+	.menu__btn > span::before,
+	.menu__btn > span::after {
+		display: block;
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		background-color: blue;
+		transition-duration: .25s;
+		right: 0;
+  	}
+	.menu__btn > span::before {
+		content: '';
+		top: -8px;
+	}
+	.menu__btn > span::after {
+		content: '';
+		top: 8px;		
+	}
+	.pic {	
+		background-size: contain;
+		max-width: 280px;
+		max-height: 239px;
+		left: 80px;
+		top: 130px;
+	}
+	.main__text {
+		font-size: 30px;
+		line-height: 40px;
+		width: 267px;
+		height: 96px;
+		top: 358px;
+		left: 57px;
+		position: relative;
+	}
+	.second__text {
+		width: 330px;
+		height: 43px;
+		top: 498px;
+		left: 53px;
+		font-size: 16px;
+	}
+	.button {
+		top: 580px;
+		left: 84px;
+	}
+}
