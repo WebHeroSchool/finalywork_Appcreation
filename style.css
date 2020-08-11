@@ -46,7 +46,7 @@
 }
 .hamburger__menu {
 	position: absolute;
-	min-width: 500px;
+	min-width: 100px;
 }
 .menu__btn {  /* стиль кнопки */
 	display: flex;
@@ -62,14 +62,14 @@
 .menu__box {
 	display: flex;
 	position: relative;
-	margin: 0px 0px 0px 500px;
+	margin: 0px 0px 0px 1200px;
 	list-style: none;
 }
 .menu__item {  /* элементы в меню */
 	display: inline;
 	padding: 12px 24px;
 	color: black;
-	font-size: 14px;
+	font-size: 18px;
 	text-decoration: none;
 	transition-duration: .25s;
 }
@@ -86,7 +86,7 @@
 	opacity: 0.5;
 	position: absolute;
 	top: 47px;
-	left: 54px;
+	left: 204px;
 }
 .circle_blue {
 	width: 28px;
@@ -95,47 +95,47 @@
 	background: #0056EC;
 	position: absolute;
 	top: 40px;
-	left: 46px; 
+	left: 196px; 
 }
 .header {
 	position: absolute;
 	top: 40px;
-	left: 90px;
+	left: 240px;
 	font-size: 24px;
 }
 .main__text {
-	font-size:50px;
-	line-height: 66px;
+	font-size: 66px;
+	line-height: 87px;
 	display: flex;
-	width: 434px;
-	height: 195px;
-	top: 212px;
-	left: 46px;
+	width: 657px;
+	height: 255px;
+	top: 318px;
+	left: 195px;
 	position: absolute;
 }
 .second__text {
 	position: relative;
-	width: 330px;
-	height: 43px;
-	top: 447px;
-	left: 46px;
-	font-size: 18px;
+	width: 455px;
+	height: 52px;
+	top: 613px;
+	left: 195px;
+	font-size: 22px;
 	font-weight: bold;
 }
 .button {
 	display: block;
 	position: relative;
-	font-size: 14px;
+	font-size: 18px;
 	text-decoration: none;
 	color: white;
 	background: blue;
 	text-align: center;
 	line-height: 45px;
 	border-radius: 4px;
-	width: 209px;
-	height: 44px;
-	top: 531px;
-	left: 46px;
+	width: 270px;
+	height: 57px;
+	top: 724px;
+	left: 217px;
 }
 .pic {
 	background-image: url(./frame.svg);
@@ -145,7 +145,7 @@
 	position: absolute;
 	width: 770px;
 	height: 657px;
-	left: 133px;
+	left: 953px;
 	top: 242px;
 }
 @media (max-width: 375px) {
