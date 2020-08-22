@@ -62,6 +62,7 @@
 .menu__box {
 	display: flex;
 	position: relative;
+	/*margin: 0px 0px 0px 1200px;*/
 	margin: 0px 0px 0px 1200px;
 	list-style: none;
 }
@@ -151,16 +152,21 @@
 @media (max-width: 375px) {
 	.menu__box {  /* контейнер меню */
 		display: block;
-		position: relative;
+		/*position: relative;*/
+		position: absolute;
 		visibility: hidden;  /* меню по умолчанию скрыто */
-		top: 0;
-		left: 100%;
+		/*top: 0;
+		left: 100%;*/
+		/*margin: 0px 0px 0px 100px;*/
+		top: 41px;
+		left: 10px;
 		width: 300px;
 		height: 100%;
 		padding: 80px 0;  /* поля сверху, снизу и слева, справа */
 		list-style: none;
 		background-color: white;  /* фон меню */
 		transition-duration: .25s;
+		
 	}
 	.menu__btn > span,  /* "гамбургер" */
 	.menu__btn > span::before,
@@ -171,11 +177,15 @@
 		height: 2px;
 		background-color: blue;
 		transition-duration: .25s;
-		right: 0;
+		/*right: 0;*/
+
+		
+
   	}
 	.menu__btn > span::before {
 		content: '';
 		top: -8px;
+
 	}
 	.menu__btn > span::after {
 		content: '';
@@ -210,5 +220,20 @@
 	}
 	.header {
 		display: none;
+	}
+	.circle_lightskyblue {
+	top: 31px;
+	left: 32px;
+}
+	.circle_blue {
+	top: 24px;
+	left: 24px; 
+	}
+	.hamburger__menu {
+		position: absolute;
+		width: 0px;
+		height: 100px;
+		top: 41px;
+		left: 250px;
 	}
 }
