@@ -7,21 +7,9 @@
 	src: url('./Roboto-Light.ttf');
 	font-weight: 100;
 }
-.header {
-	font-family: PT Serif;
-}
-.menu__item {
-	font-family: Roboto;
-	font-weight: 900;
-}
-.main__text {
-	font-family: PT Serif;
-}
-.second__text {
-	font-family: Roboto;
-}
-.button {
-	font-family: Roboto;
+.body {
+	width: 1920px;
+	height: 1080px;
 }
 #menu__toggle {
 	opacity: 0;  /* скрывает чекбокс делая его прозрачным */
@@ -44,14 +32,21 @@
 	visibility: visible;
 	right: 0;
 }
+.header {
+	display: flex;
+}
+.section {
+	display: block;
+}
 .hamburger__menu {
-	position: absolute;
+	/*position: absolute;*/
 	min-width: 100px;
+display: flex;
 }
 .menu__btn {  /* стиль кнопки */
 	display: flex;
 	align-items: center;  /* расположение содержимого по центру */
-	position: absolute;
+	/*position: absolute;*/
 	top: 20px;  /* расстояние сверху */
 	right: 20px;  /* расстояние слева */
 	width: 30px;  /* размер кнопки */
@@ -61,12 +56,12 @@
 }
 .menu__box {
 	display: flex;
-	position: relative;
-	/*margin: 0px 0px 0px 1200px;*/
-	margin: 0px 0px 0px 1200px;
+	/*position: relative;*/
 	list-style: none;
 }
 .menu__item {  /* элементы в меню */
+	font-family: Roboto;
+	font-weight: 900;
 	display: inline;
 	padding: 12px 24px;
 	color: black;
@@ -79,32 +74,37 @@
 	text-decoration-color: blue;
 }
 .circle_lightskyblue {
+	display: flex;
 	width: 28px;
 	height: 28px;
 	border-radius: 50%;
 	background: #C8DBFB;
 	z-index: 1;
 	opacity: 0.5;
-	position: absolute;
+	/*position: absolute;*/
 	top: 47px;
 	left: 204px;
 }
 .circle_blue {
+	display: flex;
 	width: 28px;
 	height: 28px;
 	border-radius: 50%;
 	background: #0056EC;
-	position: absolute;
+	/*position: absolute;*/
 	top: 40px;
 	left: 196px; 
 }
-.header {
-	position: absolute;
+.logo {
+	/*position: absolute;*/
+	font-family: PT Serif;
 	top: 40px;
 	left: 240px;
 	font-size: 24px;
+	display: flex;
 }
 .main__text {
+	font-family: PT Serif;
 	font-size: 66px;
 	line-height: 87px;
 	display: flex;
@@ -112,10 +112,12 @@
 	height: 255px;
 	top: 318px;
 	left: 195px;
-	position: absolute;
+	/*position: absolute;*/
 }
 .second__text {
-	position: relative;
+	/*position: relative;*/
+	font-family: Roboto;
+	display: flex;
 	width: 455px;
 	height: 52px;
 	top: 613px;
@@ -124,8 +126,9 @@
 	font-weight: bold;
 }
 .button {
+	font-family: Roboto;
 	display: block;
-	position: relative;
+	/*position: relative;*/
 	font-size: 18px;
 	text-decoration: none;
 	color: white;
@@ -143,7 +146,7 @@
 	background-repeat: no-repeat;
 	background-position: 100% 0;
 	background-size: 50% auto;
-	position: absolute;
+	/*position: absolute;*/
 	width: 770px;
 	height: 657px;
 	left: 953px;
@@ -153,7 +156,7 @@
 	.menu__box {  /* контейнер меню */
 		display: block;
 		/*position: relative;*/
-		position: absolute;
+		/*position: absolute;*/
 		visibility: hidden;  /* меню по умолчанию скрыто */
 		/*top: 0;
 		left: 100%;*/
@@ -172,15 +175,12 @@
 	.menu__btn > span::before,
 	.menu__btn > span::after {
 		display: block;
-		position: absolute;
+		/*position: absolute;*/
 		width: 100%;
 		height: 2px;
 		background-color: blue;
 		transition-duration: .25s;
 		/*right: 0;*/
-
-		
-
   	}
 	.menu__btn > span::before {
 		content: '';
@@ -191,12 +191,23 @@
 		content: '';
 		top: 8px;		
 	}
-	.pic {	
-		background-size: contain;
-		max-width: 280px;
-		max-height: 239px;
-		left: 80px;
-		top: 130px;
+	.hamburger__menu {
+		/*position: absolute;*/
+		width: 0px;
+		height: 100px;
+		top: 41px;
+		left: 250px;
+	}
+	.header {
+		display: none;
+	}
+	.circle_lightskyblue {
+	top: 31px;
+	left: 32px;
+	}
+	.circle_blue {
+	top: 24px;
+	left: 24px; 
 	}
 	.main__text {
 		font-size: 30px;
@@ -205,7 +216,7 @@
 		height: 96px;
 		top: 358px;
 		left: 57px;
-		position: relative;
+		/*position: relative;*/
 	}
 	.second__text {
 		width: 330px;
@@ -218,22 +229,12 @@
 		top: 580px;
 		left: 84px;
 	}
-	.header {
-		display: none;
-	}
-	.circle_lightskyblue {
-	top: 31px;
-	left: 32px;
-}
-	.circle_blue {
-	top: 24px;
-	left: 24px; 
-	}
-	.hamburger__menu {
-		position: absolute;
-		width: 0px;
-		height: 100px;
-		top: 41px;
-		left: 250px;
+	.pic {	
+		background-size: contain;
+		max-width: 280px;
+		max-height: 239px;
+		left: 80px;
+		top: 130px;
 	}
 }
+	
