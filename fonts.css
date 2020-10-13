@@ -1,0 +1,27 @@
+@font-face {
+	font-family: PT Serif;
+	src: url('./PTSerif-Bold.ttf');
+}
+@font-face {
+	font-family: Roboto;
+	src: url('./Roboto-Light.ttf');
+	font-weight: 100;
+}
+
+.header {
+	font-family: PT Serif;
+}
+.menu__item {
+	font-family: Roboto;
+	font-weight: 900;
+}
+.section-content__title {
+	font-family: PT Serif;
+}
+.section-content__description {
+	font-family: Roboto;
+	
+}
+.section-content__button {
+	font-family: Roboto;
+}
