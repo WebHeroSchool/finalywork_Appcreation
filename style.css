@@ -53,7 +53,7 @@
 
 .menu__item {
 	position: relative;
-	font-size: 14px;
+	font-size: 19px;
 	margin-right: 26px;
 	color: #000;
 	text-decoration: none;
@@ -81,19 +81,23 @@
 
 .section {
 	margin: 0;
+	padding-top: 100px;
+	background: url(img/Frame.svg);
+	background-repeat: no-repeat;
+	background-position: top 30px right;
 }
 
 .section-content {
 	display: block;
 	padding: 0 52% 100% 0;
-	background: url(img/frame.svg);
-	background-repeat: no-repeat;
-	background-position: top right;
+
 }
 
 .section-content__title {
-	font-size: 50px;
-	margin: 0 0 40px 0;
+	font-size: 66px;
+	margin: 0 0 36px 0;
+	max-width: 567px;
+	line-height: 87px;
 }
 
 .section-content__title-text-hightlight {
@@ -101,13 +105,14 @@
 }
 
 .section-content__description {
-	font-size: 18px;
-	margin: 0 0 41px 0;
+	font-size: 22px;
+	margin: 0 0 58px 0;
+	max-width: 455px;
 }
 
 .section-content__button {
-	font-size: 14px;
-	padding: 14px 16px 14px 16px;
+	font-size: 18px;
+	padding: 18px 32px 16px 21px;
 	color: #fff;
 	background: #0056EC;
 	text-decoration: none;
