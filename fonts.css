@@ -3,25 +3,32 @@
 	src: url('./PTSerif-Bold.ttf');
 }
 @font-face {
-	font-family: Roboto;
-	src: url('./Roboto-Light.ttf');
-	font-weight: 100;
+	font-family: Roboto-Regular;
+	src: url('./Roboto-Regular.ttf');
+}
+
+@font-face {
+	font-family: Roboto-Medium;
+	src: url('./Roboto-Medium.ttf');
 }
 
 .header {
 	font-family: PT Serif;
 }
+
 .menu__item {
-	font-family: Roboto;
-	font-weight: 900;
+	font-family: Roboto-Medium;
 }
+
 .section-content__title {
 	font-family: PT Serif;
 }
+
 .section-content__description {
-	font-family: Roboto;
+	font-family: Roboto-Regular;
 	
 }
+
 .section-content__button {
-	font-family: Roboto;
+	font-family: Roboto-Medium;
 }
