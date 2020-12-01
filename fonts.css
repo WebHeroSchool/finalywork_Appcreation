@@ -1,34 +1,35 @@
 @font-face {
-	font-family: PT Serif;
-	src: url('./PTSerif-Bold.ttf');
-}
-@font-face {
-	font-family: Roboto-Regular;
-	src: url('./Roboto-Regular.ttf');
+  font-family: 'PTSerif-Bold';
+  src: url('./fonts/PTSerif-Bold.ttf');
 }
 
 @font-face {
-	font-family: Roboto-Medium;
-	src: url('./Roboto-Medium.ttf');
+  font-family: 'Roboto-Medium';
+  src: url('./fonts/Roboto-Medium.ttf');
 }
 
-.header {
-	font-family: PT Serif;
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url('./fonts/Roboto-Regular.ttf');
 }
 
-.menu__item {
-	font-family: Roboto-Medium;
+.logo {
+  font-family: PTSerif-Bold;
+}
+
+.menu {
+  font-family: Roboto-Medium;
 }
 
 .section-content__title {
-	font-family: PT Serif;
+  font-family: PTSerif-Bold;
 }
 
 .section-content__description {
-	font-family: Roboto-Regular;
-	
+  font-family: 'Roboto-Regular';
 }
 
 .section-content__button {
-	font-family: Roboto-Medium;
+  font-family: Roboto-Medium;
 }
+
