@@ -89,17 +89,18 @@ header {
 .section-content {
   display: block;
   width: 55%;
-  padding: 72px 52% 100px 2px;
+  padding: 73px 45% 100px 2px;
   background: url(img/Frame.svg);
   background-repeat: no-repeat;
   background-position: top right;
+
 }
 
 .section-content__title {
   width: 70%;
   font-size: 66px;
   margin: 0;
-  margin: 0 0 47px 0;
+  margin: 0 0 40px 0;
   line-height: 88px;
 }
 
@@ -110,9 +111,9 @@ header {
 .section-content__description {
   font-size: 22px;
   line-height: 26px;
-  width: 60%;
-  height: 52px;
-  margin: 0 0 62px 0;
+  width: 53%;
+ /* height: 52px; */
+  margin: 0 0 58px 0;
 }
 
 .section-content__button {
@@ -152,7 +153,7 @@ header {
   }
 
   .section-content {
-    padding: 15px 52% 100px 3px;
+    padding: 15px 45% 100px 3px;
     background-size: 55%;
   }
 
@@ -166,8 +167,8 @@ header {
   .section-content__description {
     font-size: 18px;
     line-height: 21px;
-    width: 80%;
-    margin: 0 0 44px 0;
+    width: 75%;
+    margin: 0 0 55px 0;
   }
 
   .section-content__button {
@@ -200,7 +201,7 @@ header {
   }
 
   .section-content {
-    padding: 15px 52% 100px 4px;
+    padding: 15px 44% 100px 4px;
     background-size: 55%;
   }
 
@@ -210,6 +211,11 @@ header {
     margin: 3px 0 42px 0;
     line-height: 65px;
   }
+
+  .section-content__description {
+    margin: 0 0 54px 0;
+  }
+
 }
 
 @media (max-width: 769px) {
@@ -340,7 +346,8 @@ header {
     font-size: 16px;
     line-height: 18px;
     margin: auto;
-    margin-bottom: 44px;
+    margin-bottom: 41px;
+    width: 80%;
   }
 
   .section-content__button {
