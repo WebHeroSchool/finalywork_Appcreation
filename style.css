@@ -8,7 +8,7 @@
 header {
   display: flex;
 	justify-content: space-between;
-  margin-bottom: 124px;
+  margin-bottom: 129px;
 }
 
 .logo {
@@ -100,7 +100,7 @@ header {
   width: 70%;
   font-size: 66px;
   margin: 0;
-  margin: 0 0 40px 0;
+  margin: 0 0 30px 0;
   line-height: 88px;
 }
 
@@ -112,8 +112,7 @@ header {
   font-size: 22px;
   line-height: 26px;
   width: 53%;
- /* height: 52px; */
-  margin: 0 0 58px 0;
+  margin: 0 0 62px 0;
 }
 
 .section-content__button {
@@ -225,6 +224,7 @@ header {
 
   .logo {
     padding: 15px 0 40px 46px;
+    font-size: 0;
   }
 
   .logo__circle {
@@ -295,7 +295,7 @@ header {
     visibility: hidden;
     top: 0;
     right: -100%;
-    width: 375px;
+    width: 100%;
     height: 100%;
     margin: 0;
     padding-top: 178px;
