@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'PTSerif-Bold';
+  src: url('./fonts/PTSerif-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto-Medium';
+  src: url('./fonts/Roboto-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url('./fonts/Roboto-Regular.ttf');
+}
+
+.logo {
+  font-family: PTSerif-Bold;
+}
+
+.menu {
+  font-family: Roboto-Medium;
+}
+
+.section-content__title {
+  font-family: PTSerif-Bold;
+}
+
+.section-content__description {
+  font-family: 'Roboto-Regular';
+}
+
+.section-content__button {
+  font-family: Roboto-Medium;
+}
+
